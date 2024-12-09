@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color:#f8f8f8;
+}
+.block-wrapper {
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px 35px;
+    margin: 30px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 00.2);
+}

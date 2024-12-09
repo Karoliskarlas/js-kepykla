@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kepykla</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="block-wrapper">
+        <h1>Kepykla</h1>
+    </header>
+
+    <div class="info-wrapper block-wrapper">
+        <h2> Pradinė informacija</h2>
+        <div class="input-wrapper">
+            <label for="employees-count">Darbuotojų skaičius:</label>
+            <input id="employees-count" type="number" min="0" step="1" value="0">
+        </div>
+        <div class="input-wrapper">
+            <label for="employee-makes-per-day">Vienas darbuotojas duonos kepalu per diena:</label>
+            <input id="employee-makes-per-day" type="number" min="0" step="1" value="0">
+        </div>
+        <div class="input-wrapper">
+            <label for="day-reservations">Kiek užsakymu turi būti įgyvendinta:</label>
+            <input id="day-reservations" type="number" min="0" step="1" value="0">
+        </div>
+    </div>
+    <div class="calculation-wrapper block-wrapper">
+        <h2>Skaičivimai</h2>
+        <div class="id">
+            <p>Kol kas nieko nėra.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
