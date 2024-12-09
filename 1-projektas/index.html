@@ -18,16 +18,18 @@
         <h2>Pradinė informacija</h2>
         <div class="input-wrapper">
             <label for="employee-count">Darbuotojų skaičius:</label>
-            <input type="number" min="0" step="1" value="0" id="employee-count">
+            <input   type="number" min="0" step="1" value="0" id="employee-count">
             <span class="error">Darbuotojų skaičius negali būti neigiamas.</span>
         </div>
         <div class="input-wrapper">
             <label for="loaves-per-employee">Duonos kepalų per dieną (vienas darbuotojas):</label>
             <input type="number" min="0" step="1" value="0" id="loaves-per-employee">
+            <span class="error">duonos kepalu negali buti maziau nulio!</span>
         </div>
         <div class="input-wrapper">
             <label for="order-count">Užsakymų kiekis:</label>
             <input type="number" min="0" step="1" value="0" id="order-count">
+            <span class="error">Negali būti mažesnis!</span>
         </div>
         <button id="calculate">Skaičiuoti</button>
         <button id="reset">Iš naujo</button>

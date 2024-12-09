@@ -22,3 +22,54 @@ claculateButton.addEventListener('click', function () {
     resultDiv.innerHTML += `<p><strong>jai reikia spėti pagaminti:</strong> ${orderCounts} kepalų </p> `;
     resultDiv.innerHTML += `<p><strong>Ar spės pagaminti?</strong> ${isBakeryGonaMakeIt ?'taip' :'ne'}</P>`
 });
+
+document.getElementById('employee-count').addEventListener('keyup', function(event){
+// console.log('reiksme pasikeite');
+let inputValue = (event.target.valueAsNumber);
+
+if(inputValue < 0){
+    console.log(event.target)
+    event.target.classList.add('error')
+    event.target.nextElementSibling.classList.add('show');
+} else{
+    console.log(event.target)
+    event.target.classList.remove('error')
+    event.target.nextElementSibling.classList.remove('show');
+}
+})
+
+document.getElementById('loaves-per-employee').addEventListener('keyup',function(event){
+    let inputValue = (event.target.valueAsNumber)
+
+    if (inputValue < 0) {
+        console.log(event.target)
+        event.target. classList.add('error');
+        event.target.nextElementSibling.classList.add('show');
+    } else{
+        console.log(event.target)
+        event.target. classList.remove('error');
+        event.target.nextElementSibling.classList.remove('show');
+    }
+})
+
+document.getElementById('order-count').addEventListener('keyup', function(event) {
+    let inputValue = (event.target.valueAsNumber)
+
+    if (inputValue < 0) {
+        console.log(event.target)
+        event.target. classList.add('error');
+        event.target.nextElementSibling.classList.add('show');
+    } else{
+        console.log(event.target)
+        event.target. classList.remove('error');
+        event.target.nextElementSibling.classList.remove('show');
+    }
+})
+document.getElementById('reset').addEventListener('click', function(){
+    console.log('clicked')
+    document.getElementById('employee-count').value = 0;
+    document.getElementById('loaves-per-employee').value = 0;
+    document.getElementById('order-count').value = 0;
+    document.getElementById('results') .innerHTML = ' <p>Kol kas nieko nėra.</p>';
+});
+

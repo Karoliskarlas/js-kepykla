@@ -36,6 +36,7 @@ h1, h2, h3, h4, h4, h5, h6 {
     border-width:1px;
 }
 
+
 .info-wrapper button {
     cursor:pointer;
     padding:5px 10px;
@@ -45,6 +46,7 @@ h1, h2, h3, h4, h4, h5, h6 {
     border-color:red;
     background-color:rgba(255,0,0,0.2);
 }
+
 
 .info-wrapper .input-wrapper span.error {
     color:red;
