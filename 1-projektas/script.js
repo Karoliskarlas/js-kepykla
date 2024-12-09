@@ -20,4 +20,5 @@ claculateButton.addEventListener('click', function () {
     resultDiv.innerHTML = `<p><strong> kepykla per diena  </strong>${bakeryTotal}</p>`;
     resultDiv.innerHTML = `<p><strong> kepykla per diena spės  pagaminti: </strong>${bakeryTotal} kepalu </p>`;
     resultDiv.innerHTML += `<p><strong>jai reikia spėti pagaminti:</strong> ${orderCounts} kepalų </p> `;
+    resultDiv.innerHTML += `<p><strong>Ar spės pagaminti?</strong> ${isBakeryGonaMakeIt ?'taip' :'ne'}</P>`
 });
